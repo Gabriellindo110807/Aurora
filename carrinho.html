@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrinho - Aurora</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="dark">
+  <button id="toggle-theme"></button>
+
+ <main class="carrinho-container">
+  <h2>Seu Carrinho</h2>
+
+  <div class="carrinho-item">
+    <span>Produto escaneado:</span>
+    <span id="produto-lido">Nenhum</span>
+  </div>
+
+  
+<button onclick="simularLeituraQRCode()">Adicionar Produto</button>
+
+  <div class="resumo">
+    <strong>Total: <span id="total">R$ 0,00</span></strong><br><br>
+    <a href="checkout.html"><button>Finalizar Compra</button></a>
+  </div>
+</main>
+</body>
+</html>

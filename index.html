@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aurora Technology - Bem-vindo</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="dark">
+  <button id="toggle-theme"></button>
+
+ 
+  
+  <main class="home-wrapper">
+
+
+    <div class="container">
+          <h1 id="typing"></h1>
+          <p>Autoatendimento moderno para sua praticidade!</p>
+          <a href="login.html" class="btn">Entrar</a>
+      </div>
+
+    
+      <script>
+      const texto = "Bem-vindo ao Totem Aurora";
+      let i = 0;
+      function digitar() {
+        if (i < texto.length) {
+          document.getElementById("typing").innerHTML += texto.charAt(i);
+          i++;
+          setTimeout(digitar, 80);
+        }
+      }
+      window.onload = () => {
+          digitar();
+          aplicarTemaSalvo();
+      };
+      </script> 
+  
+</body>
+</html>

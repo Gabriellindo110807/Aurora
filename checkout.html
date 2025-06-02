@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Aurora</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="dark">
+  <button id="toggle-theme"></button>
+
+  <main class="form-container">
+    <h2>Finalizar Compra</h2>
+    <form method="post" action="finalizar.php">
+      <label>Forma de pagamento:</label>
+      <select name="pagamento" required>
+        <option value="">Selecione</option>
+        <option value="pix">PIX</option>
+        <option value="cartao">Cartão de Crédito</option>
+        <option value="debito">Cartão de Débito</option>
+      </select>
+      <button type="submit">Confirmar Pagamento</button>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Aurora</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="dark">
+  <button id="toggle-theme"></button>
+
+  <main class="login-wrapper">
+    <h2>Entrar na Aurora</h2>
+    <form action="google_login.php" method="get">
+        <button type="submit" class="google-login">Entrar com Google</button>
+      </form>
+    <div class="divider">ou</div>
+    <form action="login.php" method="POST">
+      <input type="email" name="email" placeholder="Digite seu e-mail" required />
+      <input type="password" name="senha" placeholder="Digite sua senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+    <a href="cadastro.html" class="destacado">Não possui uma conta? Cadastre-se</a>
+    </html>
+  </main>
+</body>
